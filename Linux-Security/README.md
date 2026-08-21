@@ -7,7 +7,7 @@ My task is to examine existing permissions on the file system. I will need to de
 
 Check file and directory details
 
-<img width="805" height="265" alt="Screenshot 2026-08-20 122403" src="https://github.com/user-attachments/assets/80b14949-d848-4f4e-b17c-51b4c2b86852" />
+<img width="805" height="265" alt="Screenshot 2026-08-20 122403" src="https://github.com/user-attachments/assets/5110e792-c284-42cb-a923-ccf06992ab78" />
 
 I used the command ls -la to display the current permissions for all files and subdirectories, including hidden ones, in the projects directory.
 
@@ -15,17 +15,17 @@ I used the command ls -la to display the current permissions for all files and s
 
 Describe the permissions string
 
-<img width="805" height="265" alt="Screenshot 2026-08-20 122403" src="https://github.com/user-attachments/assets/fcbc1393-e438-4b00-b64e-919fed1e5e04" />
+<img width="805" height="265" alt="Screenshot 2026-08-20 122403" src="https://github.com/user-attachments/assets/cddcc258-8a5e-4a85-88ae-0fc67d176051" />
 
 The permissions for the file project_k.txt are: -rw-rw-rw-
 
-The - at the beginning of the file indicates that this permission string is for a file; a d would be used to represent a directory. The 2nd-4th characters indicate the permissions for the user. In this case, the user has read and write permissions, represented by rw, but does not have execute permissions, indicated by the -. The 5th-7th characters indicate the permissions for the group (research_team); in this case, it is the same as the permissions for the owner. Finally, the 8th-10th characters represent the permissions for others; in this case, they have the same permissions as the user and group. 
+The - at the beginning of the file indicates that this permission string is for a file; a d would be used to represent a directory. The 2nd-4th characters indicate the permissions for the user. In this case, the user has read and write permissions, represented by (rw), but does not have execute permissions, indicated by the (-). The 5th-7th characters indicate the permissions for the group (research_team); in this case, it is the same as the permissions for the owner. Finally, the 8th-10th characters represent the permissions for others; in this case, they have the same permissions as the user and group. 
 
 
 
 Change file permissions 
 
-<img width="791" height="281" alt="Screenshot 2026-08-20 140138" src="https://github.com/user-attachments/assets/f211f925-b7ea-46cb-9cbf-51b56d903093" />
+<img width="791" height="281" alt="Screenshot 2026-08-20 140138" src="https://github.com/user-attachments/assets/0a1bf1a0-7553-485c-98a7-8788b6f86d62" />
 
 For this activity, the organisation does not allow others to have write permissions to any files.
 
@@ -37,7 +37,7 @@ Typing the command ls -la again showed that write permissions for others had bee
 
 Change file permissions on a hidden file
 
-<img width="791" height="281" alt="Screenshot 2026-08-20 140138" src="https://github.com/user-attachments/assets/e78295f9-400f-4df6-890d-33ad4c04c9e2" />
+<img width="791" height="281" alt="Screenshot 2026-08-20 140138" src="https://github.com/user-attachments/assets/e0c12095-7e71-4f13-a3ae-7394cd2b76c9" />
 
 For this activity, the research team has archived .project_x.txt, which is why it’s a hidden file, indicated by the period (.) at the beginning of the file name. This file should not have write permissions for anyone, but the user and group should be able to read the file. 
 
@@ -45,13 +45,13 @@ Looking at the file permissions for the hidden file, it is clear to see that the
 
 Firstly, I will remove the write access to this file for the user and group. I will run the command chmod u-w,g-w .project_x.txt to do this.
 
-<img width="794" height="273" alt="Screenshot 2026-08-20 142817" src="https://github.com/user-attachments/assets/594c2e08-8e9b-4b05-a39d-18e656aa99e9" />
+<img width="794" height="273" alt="Screenshot 2026-08-20 142817" src="https://github.com/user-attachments/assets/bfcfb557-d07d-4edd-abdd-ceaf309f7c07" />
 
 Running the command ls -la shows that write permissions have now been removed for both the user and group.
 
 Next, I will grant read access to the group for this file. To do so, I will run the command chmod g+r .project_x.txt. Running g+r will grant the group read permissions.
 
-<img width="789" height="271" alt="Screenshot 2026-08-20 143339" src="https://github.com/user-attachments/assets/f4f665b8-be43-42dd-96eb-868275161016" />
+<img width="789" height="271" alt="Screenshot 2026-08-20 143339" src="https://github.com/user-attachments/assets/fa5bbc31-6e60-41e1-b76d-da070c3639c9" />
 
 Running ls -la one more time now confirms that the user and group have only read permissions for this file.
 
@@ -63,12 +63,11 @@ For this activity, the files and directories in the projects directory belong to
 
 By running ls -la, we can see that the drafts directory has full read, write and execute permissions for the user, but also grants execute permissions for the group. See below.
 
-<img width="791" height="259" alt="Screenshot 2026-08-20 140138new" src="https://github.com/user-attachments/assets/8fda5ddd-a5d0-44c9-b1c9-fc3c063e0277" />
+<img width="791" height="259" alt="Screenshot 2026-08-20 140138new" src="https://github.com/user-attachments/assets/711c230e-6e7a-4b0d-8a85-2a93293d9d07" />
 
 Running the command chmod g-x drafts will remove the execute permissions for the group. Running ls -la one more time will confirm this.
 
-<img width="795" height="273" alt="Screenshot 2026-08-20 145742" src="https://github.com/user-attachments/assets/1438a894-c4f1-4560-9731-d44b67babf55" />
-
+<img width="795" height="273" alt="Screenshot 2026-08-20 145742" src="https://github.com/user-attachments/assets/aad11c36-b610-44af-a799-41c4fece2225" />
 
 
 Summary
