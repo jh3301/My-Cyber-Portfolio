@@ -1,11 +1,9 @@
-# Managing-file-permissions-in-Linux
-Project description
+# Managing file permissions in Linux
+# Project description
 
 My task is to examine existing permissions on the file system. I will need to determine if the permissions match the authorisation that should be given. If they do not match, I’ll need to modify the permissions to authorise the appropriate users and remove any unauthorised access. 
 
-
-
-Check file and directory details
+# Check file and directory details
 
 <img width="805" height="265" alt="Screenshot 2026-08-20 122403" src="https://github.com/user-attachments/assets/5110e792-c284-42cb-a923-ccf06992ab78" />
 
@@ -13,7 +11,7 @@ I used the command `ls -la` to display the current permissions for all files and
 
 
 
-Describe the permissions string
+# Describe the permissions string
 
 <img width="805" height="265" alt="Screenshot 2026-08-20 122403" src="https://github.com/user-attachments/assets/cddcc258-8a5e-4a85-88ae-0fc67d176051" />
 
@@ -23,7 +21,7 @@ The `-` at the beginning of the file indicates that this permission string is fo
 
 
 
-Change file permissions 
+# Change file permissions 
 
 <img width="791" height="281" alt="Screenshot 2026-08-20 140138" src="https://github.com/user-attachments/assets/0a1bf1a0-7553-485c-98a7-8788b6f86d62" />
 
@@ -35,7 +33,7 @@ Typing the command `ls -la` again showed that write permissions for others had b
 
 
 
-Change file permissions on a hidden file
+# Change file permissions on a hidden file
 
 <img width="791" height="281" alt="Screenshot 2026-08-20 140138" src="https://github.com/user-attachments/assets/e0c12095-7e71-4f13-a3ae-7394cd2b76c9" />
 
@@ -57,7 +55,7 @@ Running `ls -la` one more time now confirms that the user and group have only re
 
 
 
-Change directory permissions
+# Change directory permissions
 
 For this activity, the files and directories in the projects directory belong to the researcher2 user. Only researcher2 should be allowed to access the drafts directory and its contents. 
 
@@ -70,7 +68,7 @@ Running the command `chmod g-x drafts` will remove the execute permissions for t
 <img width="795" height="273" alt="Screenshot 2026-08-20 145742" src="https://github.com/user-attachments/assets/aad11c36-b610-44af-a799-41c4fece2225" />
 
 
-Summary
+# Summary
 In this task, I used `ls -la` to check the current permissions for all files and directories, including hidden ones. I then used the `chmod` command to fix security issues by removing write permissions from others on `project_k.txt`. Next, I updated the hidden file `.project_x.txt` so only the owner and group have read-only access. Finally, I removed group access from the drafts directory so only `researcher2` can open it. I verified all my changes with `ls -la` along the way. 
 
 To view as a pdf click here
