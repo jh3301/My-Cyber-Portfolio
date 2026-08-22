@@ -1,5 +1,5 @@
 # Adding and managing users with Linux commands
-Scenario
+# Scenario
 In this scenario, a new employee with the username `researcher9` joins an organisation. I have to add them to the system and continue to manage their access during their time with the organisation.
 
 Here’s how I will do this task: First, I’ll add a new employee to the system and then to their primary group. Second, I’ll make this employee the owner of a file related to a particular project. Third, I’ll add the new employee to a supplementary group. Finally, I’ll delete the employee from the system. 
