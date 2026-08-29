@@ -1,4 +1,9 @@
 # Managing file permissions in Linux
+> **Note:** This practical lab activity was completed using Qwiklabs as part of the **Google Cybersecurity Professional Certificate**.
+
+> **Note:** Query outputs and screenshots display truncated sample rows, as full result sets contained up to 200 records.
+
+
 # Project description
 
 My task is to examine existing permissions on the file system. I will need to determine if the permissions match the authorisation that should be given. If they do not match, I’ll need to modify the permissions to authorise the appropriate users and remove any unauthorised access. 
