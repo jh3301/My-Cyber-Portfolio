@@ -1,4 +1,9 @@
 # Adding and managing users with Linux commands
+
+> **Note:** This practical lab activity was completed using Qwiklabs as part of the **Google Cybersecurity Professional Certificate**.
+
+> **Note:** Query outputs and screenshots display truncated sample rows, as full result sets contained up to 200 records.
+
 # Scenario
 In this scenario, a new employee with the username `researcher9` joins an organisation. I have to add them to the system and continue to manage their access during their time with the organisation.
 
