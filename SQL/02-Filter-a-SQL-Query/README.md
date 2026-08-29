@@ -1,6 +1,7 @@
 # Filtering a SQL Query
 
 > **Note:** This practical lab activity was completed using Qwiklabs as part of the **Google Cybersecurity Professional Certificate**.
+
 > **Note:** Query outputs and screenshots display truncated sample rows, as full result sets contained up to 200 records.
 
 ## Scenario
