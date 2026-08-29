@@ -1,5 +1,9 @@
 # Performing a SQL Query
 
+> **Note:** This practical lab activity was completed using Qwiklabs as part of the **Google Cybersecurity Professional Certificate**.
+
+> **Note:** Query outputs and screenshots display truncated sample rows, as full result sets contained up to 200 records.
+
 ## Lab Activity & Investigation Report — Database Querying Fundamentals
 
 In this lab activity, I used the fundamental SQL commands `SELECT` and `FROM` to retrieve specific information from an organisation's relational database. I also utilised the `ORDER BY` clause to sequence the returned query records based on specified columns in ascending order.
