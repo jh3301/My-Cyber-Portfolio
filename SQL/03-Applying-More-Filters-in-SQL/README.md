@@ -9,6 +9,16 @@
 In this activity, I am investigating a recent security incident affecting the organisation. My objective is to gather specific authentication log data across targeted dates, times, and event IDs to identify potentially malicious or anomalous login activity.
 
 To accomplish this investigation, I will query the `log_in_attempts` table in the MariaDB shell using comparison operators (`>`, `>=`, `<`) and range operators (`BETWEEN ... AND`).
+---
+
+## Inspecting the Database 
+Before executing filtered queries, I first inspected the table structures in the `organisation` database using the `DESCRIBE` command:
+
+```sql
+DESCRIBE machines;
+DESCRIBE employees;
+```
+<img width="598" height="397" alt="Screenshot 2026-08-29 174629" src="https://github.com/user-attachments/assets/3ef79574-1be2-4442-9283-494a770f5730" />
 
 ---
 ## Task 1: Retrieve Login Attempts After a Certain Date
