@@ -11,7 +11,7 @@ To accomplish this efficiently, I will query the database using `SELECT` and `FR
 
 ---
 
-## Inspecting Database Schema
+## Inspecting the Database 
 Before executing filtered queries, I first inspected the table structures in the `organisation` database using the `DESCRIBE` command:
 
 ```sql
