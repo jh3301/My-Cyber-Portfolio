@@ -1,4 +1,4 @@
-# Filter with `AND`, `OR` and `NOT` in SQL
+# Applying Complex Filters in SQL (`AND`, `OR`, and `NOT`)
 
 > **Note:** This practical lab activity was completed using Qwiklabs as part of the **Google Cybersecurity Professional Certificate**.
 
