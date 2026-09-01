@@ -6,9 +6,9 @@
 
 ---
 ## Scenario
-In this activity, I am investigating potential security issues and identifying specific computer assets for updates across different departments. I need to extract targeted authentication records from the `log_in_attempts` table and staff details from the `employees` table in the organisation database.
+In this activity, I investigate potential security issues and identify specific computer assets for updates across departments. I need to extract targeted authentication records from the `log_in_attempts` table and staff details from the `employees` table in the organisation database.
 
-To achieve this, I will construct advanced SQL queries using logical operators (`AND`, `OR`, `NOT`) alongside pattern matching (`LIKE`) to filter database records across multiple simultaneous criteria.
+To do this, I will write advanced SQL queries using logical operators (`AND`, `OR`, `NOT`) and pattern matching (`LIKE`) to filter records across multiple criteria.
 
 ---
 ## Task 1: Retrieve After-Hours Failed Login Attempts
