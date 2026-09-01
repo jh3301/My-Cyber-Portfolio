@@ -14,3 +14,6 @@ A collection of hands-on database querying, log analysis, and security investiga
 
 * **03. Applying More Filters in SQL**
   * **Objective:** Investigate security incident authentication logs using comparison operators (`>`, `>=`, `<`) and the `BETWEEN ... AND` range operator across dates, times, and numeric event IDs.
+
+* **04. Applying Complex Filters in SQL (AND, OR, and NOT)**
+  * **Objective:** Apply complex logical operators (`AND`, `OR`, `NOT`) alongside `LIKE` pattern matching to isolate after-hours failed authentication events, audit specific multi-day log windows, exclude international traffic, and filter departmental assets for system updates.
